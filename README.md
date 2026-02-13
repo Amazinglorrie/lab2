@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# My To Do List App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple ToDo list application built with React Native that demonstrates component-based architecture.
 
-## Get started
+## Description
 
-1. Install dependencies
+This is a React Native application created as part of Lab Assignment 2. The app displays a list of tasks and includes a form to add new tasks. The project demonstrates how to break down a component into smaller, reusable components.
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Display a list of ToDo tasks
+- Visual indication of completed tasks
+- Form to add new tasks
+- Component-based architecture
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+## Project Structure
+```
+.
+├── index.tsx          # Main app component
+├── ToDoList.tsx       # Component for displaying the task list
+├── ToDoForm.tsx       # Component for the add task form
+└── README.md          # Project documentation
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Components
 
-## Learn more
+### App (index.tsx)
+The main application component that imports and renders the ToDoList and ToDoForm components.
 
-To learn more about developing your project with Expo, look at the following resources:
+### ToDoList
+Displays a scrollable list of tasks with the following features:
+- Shows task text
+- Indicates completed tasks with a gray background
+- Each task is pressable
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### ToDoForm
+A form component that includes:
+- Text input field for new tasks
+- "Add" button to submit tasks
 
-## Join the community
+## Installation
+npx create-expo-app@latest lab2
 
-Join our community of developers creating universal apps.
+## Reset the project
+npm run reset-project
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## Running the App
+
+Start the development server:
+
+npx expo start
+
+
+Then follow the on-screen instructions to run the app on:
+- iOS Simulator
+- Android Emulator
+- Physical device using Expo Go app
+
+## Technologies Used
+
+- React Native
+- TypeScript
+- Expo 
+
+## Assignment Requirements
+
+This project fulfills the following requirements:
+-  Part 1: Hard-coded ToDo list and form in a single file
+-  Part 2: Separated into ToDoList and ToDoForm components
+-  Part 3: Components imported and used in main App file
+
+## Author
+
+[Loretta Okoh]
+
+## Course Information
+
+- **Course**: [Mobile Application Development (CPRG-303-C)]
+- **Assignment**: Lab Assignment 2: Layout Components
+- **Date**: [February 13 2026]
+
+
+## License
+
+This project is created for educational purposes.
