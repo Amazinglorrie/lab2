@@ -14,7 +14,7 @@ export default function Index() {
   ]);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView >
       <ToDoList tasks={tasks} /> 
       <ToDoForm />
     </SafeAreaView>
