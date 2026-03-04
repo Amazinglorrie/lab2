@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
 } from 'react-native';
 import ToDoList from './ToDoList';
 import ToDoForm from './ToDoForm';
 
-function App() {
+export default function Index() {
+  const [tasks, setTasks] = useState<string[]>
+  ([  
+    'Do laundry',
+    'Go to gym',
+    'Walk dog'
+  ]);
+
   return (
     <SafeAreaView>
-      <ToDoList />
+      <ToDoList tasks={tasks} /> 
       <ToDoForm />
     </SafeAreaView>
   );
 }
-
-export default App;

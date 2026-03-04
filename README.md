@@ -1,3 +1,17 @@
+# Lab Assignment 3: Props and State Management
+
+A simple To-Do List app built with React Native and Expo, demonstrating the use of state management and props.
+
+## What It Does
+
+Displays a static list of tasks passed from a parent component to a child component using props.
+
+# Key Concepts
+
+useState — stores the task list in index.tsx
+Props — tasks array is passed down to the ToDoList component
+.map() — dynamically renders each task on the screen
+
 # My To Do List App
 
 A simple ToDo list application built with React Native that demonstrates component-based architecture.
@@ -14,6 +28,7 @@ This is a React Native application created as part of Lab Assignment 2. The app 
 - Component-based architecture
 
 ## Project Structure
+
 ```
 .
 ├── index.tsx          # Main app component
@@ -25,25 +40,31 @@ This is a React Native application created as part of Lab Assignment 2. The app 
 ## Components
 
 ### App (index.tsx)
+
 The main application component that imports and renders the ToDoList and ToDoForm components.
 
 ### ToDoList
+
 Displays a scrollable list of tasks with the following features:
+
 - Shows task text
 - Indicates completed tasks with a gray background
 - Each task is pressable
 
 ### ToDoForm
+
 A form component that includes:
+
 - Text input field for new tasks
 - "Add" button to submit tasks
 
 ## Installation
+
 npx create-expo-app@latest lab2
 
 ## Reset the project
-npm run reset-project
 
+npm run reset-project
 
 ## Running the App
 
@@ -51,8 +72,8 @@ Start the development server:
 
 npx expo start
 
-
 Then follow the on-screen instructions to run the app on:
+
 - iOS Simulator
 - Android Emulator
 - Physical device using Expo Go app
@@ -61,14 +82,15 @@ Then follow the on-screen instructions to run the app on:
 
 - React Native
 - TypeScript
-- Expo 
+- Expo
 
 ## Assignment Requirements
 
 This project fulfills the following requirements:
--  Part 1: Hard-coded ToDo list and form in a single file
--  Part 2: Separated into ToDoList and ToDoForm components
--  Part 3: Components imported and used in main App file
+
+- Part 1: Hard-coded ToDo list and form in a single file
+- Part 2: Separated into ToDoList and ToDoForm components
+- Part 3: Components imported and used in main App file
 
 ## Author
 
@@ -79,7 +101,6 @@ This project fulfills the following requirements:
 - **Course**: [Mobile Application Development (CPRG-303-C)]
 - **Assignment**: Lab Assignment 2: Layout Components
 - **Date**: [February 13 2026]
-
 
 ## License
 
