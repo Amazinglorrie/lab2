@@ -3,6 +3,7 @@
 A simple To-Do List app built with React Native and Expo, demonstrating the use of state management and props.
 
 ## What It Does
+The Todo List 
 
 Displays a static list of tasks passed from a parent component to a child component using props.
 
