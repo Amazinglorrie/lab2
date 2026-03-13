@@ -7,7 +7,7 @@ export default function SettingsScreen() {
   const [notifications, setNotifications] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  // ─── Load both settings on mount ─────────────────────────────────────────
+  
   useEffect(() => {
     const loadSettings = async () => {
       const storedNotifications = await storage.get(STORAGE_KEYS.NOTIFICATIONS);
@@ -24,7 +24,7 @@ export default function SettingsScreen() {
     loadSettings();
   }, []);
 
-  // ─── Handlers ─────────────────────────────────────────────────────────────
+ 
   const handleToggle = async (value: boolean) => {
     setNotifications(value);
     await storage.set(STORAGE_KEYS.NOTIFICATIONS, String(value));
@@ -35,7 +35,7 @@ export default function SettingsScreen() {
     await storage.set(STORAGE_KEYS.THEME, String(value));
   };
 
-  // ─── UI ───────────────────────────────────────────────────────────────────
+ 
   return (
     <View style={styles.container}>
 
